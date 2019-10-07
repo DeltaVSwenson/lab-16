@@ -8,7 +8,7 @@ function alterFile(file){
     if(err) { throw err; }
     let newData = upperCase(data);
     fileWrite(file,newData);
-    });
-  };
+  });
+}
 
 module.exports = alterFile;
