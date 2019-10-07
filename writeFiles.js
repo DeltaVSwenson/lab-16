@@ -10,6 +10,6 @@ require('./logger');
 
 function fileWrite(file, text){
   return writeFile(file, Buffer.from(text)).then( () => hub.emit('saved', file));
-};
+}
 
 module.exports = fileWrite;
